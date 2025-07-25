@@ -1,0 +1,92 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %} 19's Rasoi {% endblock title %}
+
+{% block hero %}
+<section class="bg-yellow-100 py-10 text-center">
+    <h1 class="text-4xl font-bold text-yellow-700">Welcome to 19's Rasoi</h1>
+    <p class="mt-4 text-lg text-yellow-600 font-bold italic">A restaurant from the streets of Uttar Pradesh, India</p>
+</section>
+{% endblock hero %}
+
+{% block maincontent %}
+<div class="container mx-auto px-4 py-10">
+    <h2 class="text-2xl font-semibold text-yellow-700 mb-8 text-center">Featured Recipes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Recipe 1 -->
+
+
+        <div class="bg-white rounded-lg shadow-md p-6 text-center border border-yellow-200 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Bati-Chokha</h3>
+            <div class="relative pb-64 mb-4">
+                <img src="{% static 'core/images/04.jpg' %}" alt="Pizza" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <p class="text-yellow-600">Smoky, spicy, and packed with bold flavors from roasted eggplant and garlic..</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 text-center border border-yellow-200 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Dal Chawal Chokha</h3>
+            <div class="relative pb-64 mb-4">
+                <img src="{% static 'core/images/05.jpg' %}" alt="Pizza" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <p class="text-yellow-600">Comforting, hearty, and accompanied by a flavorful mashed vegetable mix for that perfect balance.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 text-center border border-yellow-200 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Chole Bhature</h3>
+            <div class="relative pb-64 mb-4">
+                <img src="{% static 'core/images/02.jpg' %}" alt="Chole Bhature" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <p class="text-yellow-600">Delicious chickpea curry served with crispy fried bread.</p>
+        </div>
+
+        
+        <div class="bg-white rounded-lg shadow-md p-6 text-center border border-yellow-200 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Drinks</h3>
+            <div class="relative pb-64 mb-4">
+                <img src="{% static 'core/images/06.jpg' %}" alt="Pizza" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <p class="text-yellow-600">Refreshingly sweet, fragrant, and cooling with a perfect blend of floral and fruity flavors..</p>
+        </div>
+
+        <!-- Recipe 2 -->
+
+
+        <div class="bg-white rounded-lg shadow-md p-6 text-center border border-yellow-200 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Paneer Salad</h3>
+            <div class="relative pb-64 mb-4">
+                <img src="{% static 'core/images/01.jpg' %}" alt="Paneer Salad" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <p class="text-yellow-600">A light and healthy mix of fresh veggies and grilled paneer.</p>
+        </div>
+
+        <!-- Recipe 3 -->
+        <div class="bg-white rounded-lg shadow-md p-6 text-center border border-yellow-200 hover:shadow-lg transition">
+            <h3 class="text-xl font-bold text-yellow-800 mb-2">Pizza</h3>
+            <div class="relative pb-64 mb-4">
+                <img src="{% static 'core/images/03.jpg' %}" alt="Pizza" class="absolute inset-0 w-full h-full object-cover rounded-md">
+            </div>
+            <p class="text-yellow-600">Cheesy, flavorful, and loaded with your favorite toppings.</p>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock maincontent %}
+
+{% block footer %}
+
+<!-- Footer Section -->
+<footer class="bg-yellow-600 text-white py-4 font-bold">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm">
+            &copy; 2025 19's Rasoi. All rights reserved ~ Abhishek
+        </p>
+    </div>
+</footer>
+
+
+{% endblock %}

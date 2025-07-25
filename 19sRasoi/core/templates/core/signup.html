@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+
+    <style>
+    body {
+        background-color: white;
+        color: orange;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        font-size: 20px;
+        padding: 20px;
+        margin: 10px 0;
+        width: 70%;
+        color: orange;
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid orange;
+    }
+
+    #dk {
+        width: 50%;
+        height: 80%;
+        padding: 10px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    button {
+        width: 80%;
+        height: 40px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color:orange;
+        color: white;
+     
+    }
+
+    button:active {
+        scale: 0.95;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        /* margin-bottom: 10px; */
+
+    }
+
+    a{
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="dk">
+        <h1>Sign up...</h1>
+        <form action="" method="post">    
+            <label for="ab">Name : </label><br>
+            <input id="ab" type="text" placeholder="Name" name="uname"> <br><br>
+            
+            <label for="abc">Email : </label><br>
+            <input id="abc" type="email" placeholder="Email" name="uemail"><br><br>
+            
+            <label for="abcd">Password : </label><br>
+            <input id="abcd" type="password" placeholder="Password" name="upasswd"><br><br>
+            
+            <button type="submit">Submit</button>
+
+            <p>Already an Account! <a href="{% url 'login' %}">Login</a></p> 
+            <p>Go to Home <a href="{% url 'home' %}">Home</a></p>
+        </form>
+    </div>
+  
+</body>
+</html>

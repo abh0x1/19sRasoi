@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body {
+        background-color: white;
+        color: orange;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        font-size: 20px;
+        padding: 20px;
+        margin: 10px 0;
+        width: 70%;
+        color: orange;
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid orange;
+    }
+
+    #dk {
+        width: 50%;
+        height: 80%;
+        padding: 10px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    button {
+        width: 80%;
+        height: 40px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color:orange;
+        color: white;
+     
+    }
+
+    button:active {
+        scale: 0.95;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        /* margin-bottom: 10px; */
+
+    }
+
+    a{
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+</style>
+<body>
+    <div id="dk">
+        <h1>Login To 19's Rasoi....</h1>
+        <form action="" method="POST">
+            <label for="email">Email:</label><br>
+            <input id="email" type="email" name="uemail" placeholder="Email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input id="password" type="text" name="upasswd" placeholder="Password" required><br><br>
+
+            <button type="submit">Login</button>
+
+            <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+            <p>Go to Home <a href="{% url 'home' %}"> Home</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
